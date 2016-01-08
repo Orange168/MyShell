@@ -1,0 +1,5 @@
+#!/bin/bash
+case "$1" in
+  abc)  echo "\$variable = abc" ;;
+  xyz)  echo "\$variable = xyz" ;;
+esac
