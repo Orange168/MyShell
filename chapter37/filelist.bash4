@@ -1,0 +1,16 @@
+#!/bin/bash4
+# filelist.bash4
+shopt -s globstar  # Must enable globstar, otherwise ** doesn't work.
+                   # The globstar shell option is new to version 4 of Bash.
+echo "Using *"; echo
+for filename in *
+do
+  echo "$filename"
+done   # Lists only files in current directory ($PWD).
+echo; echo "--------------"; echo
+echo "Using **"
+for filename in **
+do
+  echo "$filename"
+done   # Lists complete file tree, recursively.
+#exit
